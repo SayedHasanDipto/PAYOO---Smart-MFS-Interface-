@@ -1,5 +1,3 @@
-console.log('js connected');
-
 document.getElementById('login-btn').addEventListener('click', function() {
     // console.log('login button hitted')
     // 1. Get NUmber input
