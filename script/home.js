@@ -4,18 +4,18 @@ document.getElementById('cashout-btn').addEventListener('click', function () {
     const agentNumberInput = document.getElementById('agent-number');
     const agentNumber = agentNumberInput.value;
     console.log('Agent Number:', agentNumber);
-    if(agentNumber.lenght != 11) {
+    if (agentNumber.length !== 11) {
         alert('Invalid Agent Number');
         return;
     }
     // 2- Get the amount, validation, convert to number
     const cashoutAmountInput = document.getElementById('cashout-amount');
     const cashoutAmount = cashoutAmountInput.value;
-    console.log('CashOut Amount:' ,cashoutAmount);
+    console.log('CashOut Amount:', cashoutAmount);
     // 3- Get the crunt balance, validation, convert to number
     const balanceElement = document.getElementById('balance');
     const balance = balanceElement.innerText;
-    console.log('Current Blance:' ,balance);
+    console.log('Current Blance:', balance);
     // 4- Calculate New balance
     const newBalance = Number(balance) - Number(cashoutAmount);
 
